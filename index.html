@@ -142,99 +142,112 @@
   .fade-in.visible { opacity: 1; transform: translateY(0); }
 
   /* ======== RESPONSIVE / MOBILE ======== */
-  @media (max-width: 768px) {
-
-    /* NAV DOTS - move left side on mobile */
-    .nav-dots { right: 12px; gap: 8px; }
-    .nav-dot { width: 6px; height: 6px; }
-
-    /* COVER */
-    .cover-content { padding: 0 24px 48px; }
-    .cover-eyebrow { font-size: 9px; letter-spacing: 3px; margin-bottom: 12px; }
-    .cover-title { font-size: 48px; }
-    .cover-subtitle { font-size: 17px; margin-bottom: 24px; }
-    .cover-meta { gap: 20px; flex-wrap: wrap; }
-    .cover-meta-item { font-size: 9px; min-width: 40%; }
-    .cover-meta-item span { font-size: 15px; }
-    .cover-scroll { right: 24px; bottom: 16px; font-size: 8px; }
-
-    /* PAGE 2 BUILDING */
-    #page2 { padding: 56px 24px; }
-    .section-intro { font-size: 17px; margin-bottom: 28px; }
-    .building-layout { grid-template-columns: 1fr; height: auto; gap: 10px; margin-bottom: 16px; }
-    .building-right { grid-template-rows: auto auto; gap: 10px; }
-    .building-layout img { height: 260px; }
-    .building-right img { height: 180px; }
-    .amenities-strip { grid-template-columns: 1fr; height: auto; gap: 10px; margin-bottom: 24px; }
-    .amenities-strip > div img { height: 200px; width: 100%; object-fit: cover; }
-    .features-row { gap: 8px; margin-bottom: 24px; }
-    .feature-pill { font-size: 9px; padding: 6px 12px; }
-    .stat-row { flex-wrap: wrap; }
-    .stat-item { min-width: 50%; border-right: none; border-bottom: 1px solid rgba(11,30,61,0.12); padding: 12px 8px; }
-    .stat-num { font-size: 26px; }
-
-    /* PAGE 3 UNIT */
-    #page3 { padding: 56px 24px; }
-    .unit-layout { grid-template-columns: 1fr; gap: 32px; }
-    .unit-floorplan img { max-height: 440px; }
-    .spec-grid { grid-template-columns: 1fr 1fr; }
-    .spec-cell-value { font-size: 15px; }
-    .exclusive-box p { font-size: 15px; }
-    .img-pair { height: 150px; }
-
-    /* PAGE 4 OPPORTUNITY */
-    #page4 { padding: 56px 24px; }
-    .opp-grid { grid-template-columns: 1fr; gap: 20px; }
-    .opp-card { padding: 28px 22px; }
-    .opp-title { font-size: 24px; }
-    .opp-steps li { font-size: 15px; }
-    .returns-table { font-size: 14px; }
-    .returns-highlight td { font-size: 15px; }
-    .bottom-strip { grid-template-columns: 1fr 1fr; }
-    .strip-cell { padding: 16px 18px; }
-    .strip-value { font-size: 19px; }
-
-    /* PAGE 5 CONTACT */
-    #page5 { grid-template-columns: 1fr; min-height: auto; }
-    .contact-image { height: 280px; }
-    .contact-image img { height: 280px; }
-    .contact-image-overlay { background: linear-gradient(to bottom, transparent 30%, var(--navy) 100%); }
-    .contact-panel { padding: 40px 24px 56px; }
-    .contact-panel .section-title { font-size: 36px; }
-    .contact-intro { font-size: 16px; margin-bottom: 24px; }
-    .contact-info-value { font-size: 17px; }
-    .next-steps { margin-top: 24px; padding: 20px; }
-    .next-step-item { font-size: 15px; }
-    .disclaimer { font-size: 8px; margin-top: 24px; }
-  }
-
-  @media (max-width: 420px) {
-    .cover-title { font-size: 38px; }
-    .cover-subtitle { font-size: 15px; }
-    .section-title { font-size: 28px !important; }
-    .bottom-strip { grid-template-columns: 1fr; }
-    .spec-grid { grid-template-columns: 1fr; }
-    .opp-num { font-size: 48px; }
-  }
 
 
     /* PAGE 6 WHY MAZATLAN MOBILE */
-    @media (max-width: 768px) {
-      #page6 [style*="grid-template-columns:1fr 1fr"],
-      #page6 [style*="grid-template-columns:380px 1fr"] { grid-template-columns: 1fr !important; }
-      #page6 [style*="bottom:40px;left:80px"] { left: 24px !important; right: 24px !important; bottom: 20px !important; }
-      #page6 [style*="padding:52px 56px"] { padding: 36px 24px !important; }
-      #page6 [style*="padding:52px 80px"] { padding: 36px 24px !important; }
-      #page6 [style*="padding:56px 80px"] { padding: 40px 24px !important; }
-      #page6 [style*="left:80px;transform"] { left: 24px !important; right: 24px !important; }
-      #page6 [style*="height:480px"] { height: 520px !important; }
-      #page6 [style*="grid-template-columns:1fr 1fr;gap:48px"] { grid-template-columns: 1fr !important; gap: 0 !important; }
-      #page6 [style*="min-height:280px"] img { min-height: 220px !important; }
-      #page6 [style*="height:500px"] { height: 380px !important; }
-      #page6 [style*="bottom:40px;left:80px"] { left: 24px !important; right: 24px !important; bottom: 24px !important; }
-      #page6 [style*="grid-template-columns:1fr 1fr;gap:3px"] { grid-template-columns: 1fr !important; }
-      #page6 [style*="height:320px"] { height: 260px !important; }
-    }
+
+
+  /* ======== COMPREHENSIVE MOBILE ======== */
+  @media (max-width: 768px) {
+
+    /* NAV */
+    .nav-dots { right: 10px; gap: 8px; }
+    .nav-dot { width: 6px; height: 6px; }
+
+    /* PAGE 1 COVER */
+    .cover-content { padding: 0 24px 44px; }
+    .cover-eyebrow { font-size: 9px; letter-spacing: 2px; }
+    .cover-title { font-size: 42px; }
+    .cover-subtitle { font-size: 16px; margin-bottom: 20px; }
+    .cover-divider { margin-bottom: 20px; }
+    .cover-meta { gap: 16px; flex-wrap: wrap; }
+    .cover-meta-item { font-size: 9px; min-width: 45%; }
+    .cover-meta-item span { font-size: 14px; }
+    .cover-scroll { display: none; }
+
+    /* PAGE 2 BUILDING */
+    #page2 { padding: 48px 24px 56px; }
+    #page2 .section-intro { font-size: 17px; margin-bottom: 28px; }
+    .building-layout { grid-template-columns: 1fr !important; height: auto !important; gap: 8px; margin-bottom: 12px; }
+    .building-right { grid-template-rows: auto auto; gap: 8px; }
+    .building-layout > img { height: 240px; }
+    .building-right img { height: 160px; }
+    .amenities-strip { grid-template-columns: 1fr !important; height: auto !important; gap: 8px; margin-bottom: 20px; }
+    .amenities-strip > div img { height: 180px; width: 100%; object-fit: cover; }
+    .features-row { gap: 8px; margin-bottom: 20px; }
+    .feature-pill { font-size: 9px; padding: 6px 10px; }
+    .stat-row { flex-wrap: wrap; }
+    .stat-item { min-width: 50%; border-right: none !important; border-bottom: 1px solid rgba(11,30,61,0.12); padding: 12px 8px; }
+    .stat-num { font-size: 26px; }
+
+    /* PAGE 3 UNIT */
+    #page3 { padding: 48px 24px 56px; }
+    .unit-layout { grid-template-columns: 1fr !important; gap: 28px; }
+    .unit-floorplan img { max-height: 400px; }
+    .spec-grid { grid-template-columns: 1fr 1fr; }
+    .spec-cell-value { font-size: 14px; }
+    .exclusive-box p { font-size: 15px; }
+    .img-pair { height: 140px; }
+
+    /* PAGE 4 OPPORTUNITY */
+    #page4 { padding: 48px 24px 56px; }
+    .opp-grid { grid-template-columns: 1fr !important; gap: 20px; }
+    .opp-card { padding: 28px 20px; }
+    .opp-title { font-size: 22px; }
+    .opp-steps li { font-size: 14px; }
+    .returns-table { font-size: 13px; }
+    .returns-highlight td { font-size: 14px; }
+    .bottom-strip { grid-template-columns: 1fr 1fr !important; }
+    .strip-cell { padding: 16px 16px; }
+    .strip-value { font-size: 18px; }
+
+    /* PAGE 5 CONTACT */
+    #page5 { grid-template-columns: 1fr !important; min-height: auto; }
+    .contact-image { height: 260px; }
+    .contact-image img { height: 260px; }
+    .contact-image-overlay { background: linear-gradient(to bottom, transparent 30%, var(--navy) 100%) !important; }
+    .contact-panel { padding: 36px 24px 48px; }
+    .contact-panel .section-title { font-size: 34px !important; }
+    .contact-intro { font-size: 16px; margin-bottom: 20px; }
+    .contact-info-value { font-size: 16px; }
+    .next-steps { margin-top: 20px; padding: 18px; }
+    .next-step-item { font-size: 14px; }
+    .disclaimer { font-size: 8px; margin-top: 20px; }
+
+    /* PAGE 6 WHY MAZATLAN - all inline grid styles */
+    #page6 [style*="grid-template-columns:1fr 1fr"],
+    #page6 [style*="grid-template-columns:1fr 1.5fr"],
+    #page6 [style*="grid-template-columns:1.5fr 1fr"],
+    #page6 [style*="grid-template-columns:420px 1fr"],
+    #page6 [style*="grid-template-columns:1fr 1.6fr"] { grid-template-columns: 1fr !important; }
+    #page6 [style*="bottom:40px;left:80px"],
+    #page6 [style*="bottom:36px;left:80px"] { left: 24px !important; right: 24px !important; bottom: 20px !important; }
+    #page6 [style*="padding:52px 56px 52px 80px"] { padding: 36px 24px !important; }
+    #page6 [style*="padding:52px 80px 52px 48px"] { padding: 36px 24px !important; }
+    #page6 [style*="padding:52px 48px 52px 80px"] { padding: 36px 24px !important; }
+    #page6 [style*="padding:48px 80px 32px"] { padding: 36px 24px 24px !important; }
+    #page6 [style*="padding:56px 80px"] { padding: 36px 24px !important; }
+    #page6 [style*="height:52vh"] { height: 42vh !important; }
+    #page6 [style*="height:420px"] { height: 280px !important; }
+    #page6 [style*="min-height:360px"] { min-height: 260px !important; }
+    #page6 [style*="height:280px"] { height: 220px !important; }
+    #page6 [style*="min-height:280px"] { min-height: 0 !important; }
+    #page6 [style*="grid-template-columns:1fr 1fr;gap:48px"] { grid-template-columns: 1fr !important; gap: 0 !important; }
+    #page6 [style*="max-width:540px"] { max-width: 100% !important; }
+    #page6 [style*="max-width:640px"] { max-width: 100% !important; }
+    #page6 [style*="left:80px;transform"] { left: 24px !important; right: 24px !important; }
+  }
+
+  @media (max-width: 420px) {
+    .cover-title { font-size: 34px; }
+    .section-title { font-size: 26px !important; }
+    .bottom-strip { grid-template-columns: 1fr !important; }
+    .spec-grid { grid-template-columns: 1fr !important; }
+    .opp-num { font-size: 44px; }
+    #page6 [style*="font-size:19px"] { font-size: 16px !important; }
+    #page6 [style*="font-size:20px"] { font-size: 16px !important; }
+    #page6 [style*="font-size:21px"] { font-size: 16px !important; }
+  }
 
 </style>
 </head>
